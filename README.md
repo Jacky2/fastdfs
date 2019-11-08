@@ -1,5 +1,7 @@
 # Fastdfs Docker镜像
 
+Fastdfs Docker镜像github地址: [https://github.com/Jacky2/fastdfs](https://github.com/Jacky2/fastdfs)
+
 ## 1. 使用说明
 
 因官方Dockerfile的只适合单机部署，根据github上Guu-mc这位朋友的项目[Guu-mc/fastdfs](https://github.com/Guu-mc/fastdfs)开源代码进行了一些功能增加，可单机可分布式部署。
