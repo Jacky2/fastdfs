@@ -37,8 +37,8 @@ ARG FASTDFS_VERSION
 
 # copy build file from builder image (--from=0 把前一阶段构建的产物拷贝到了当前的镜像中)
 COPY --from=builder /usr/bin/fdfs_* /usr/bin/
-COPY --from=builder /usr/lib/libfastcommon.so /usr/lib/
-COPY --from=builder /usr/lib64/libfastcommon.so /usr/lib64/
+COPY --from=builder /usr/lib/libfastcommon.so /usr/lib/libfdfsclient.so /usr/lib/
+COPY --from=builder /usr/lib64/libfastcommon.so /usr/lib64/libfdfsclient.so /usr/lib64/
 COPY --from=builder /etc/fdfs /etc/fdfs/
 COPY --from=builder /etc/init.d/fdfs_* /etc/init.d/
 COPY --from=builder /usr/local/nginx /usr/local/nginx/
